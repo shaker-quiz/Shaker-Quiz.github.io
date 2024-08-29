@@ -29,10 +29,10 @@ const cities = {
     "chita": "chita",
 }
 
-const origin = "https://shakerquiz.ru"
+const hostname = "shakerquiz.ru"
 
 const [city = ""] = location.pathname.split("/").filter(Boolean);
 
 location = city in cities ?
-    new URL(cities[city], origin) :
-    new URL(origin);
+    new URL(`https://${cities[city]}.${hostname}`) :
+    new URL(`https://${hostname}`);
