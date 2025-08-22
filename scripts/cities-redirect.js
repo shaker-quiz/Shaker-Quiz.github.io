@@ -10,7 +10,7 @@ const cities = {
     "kirov": "kirov",
     "kostroma": "kostroma",
     "magnitogorsk": "magnitogorsk",
-    "msk": "shakerquiz",
+    "msk": "msk",
     "nizhny_novgorod": "nizhniy-novgorod",
     "omsk": "omsk",
     "orenburg": "orenburg",
