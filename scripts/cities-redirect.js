@@ -33,6 +33,4 @@ const hostname = "shakerquiz.ru"
 
 const [city = ""] = location.pathname.split("/").filter(Boolean);
 
-location = city in cities ?
-    new URL(`https://${cities[city]}.${hostname}`) :
-    new URL(`https://${hostname}`);
+if (city in cities) location = new URL(`https://${cities[city]}.${hostname}`);
